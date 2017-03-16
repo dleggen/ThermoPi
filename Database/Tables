@@ -1,0 +1,29 @@
+Cook
+    int id
+    datetime StartTime
+    datetime EndTime - actual
+    TimeStamp PreferredDuration
+    int FoodId
+    string Comments
+
+Food Group
+    int id
+    string description
+
+Food
+    int id
+    string description
+    int FoodGroupId
+
+CookHistory
+    int id
+    int ProbeTypeId
+    decimal temperature
+    DateTime TimeStamp
+    boolean IsStart
+    boolean IsEnd
+
+ProbeType
+    int id
+    string description
+
